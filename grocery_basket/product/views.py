@@ -7,6 +7,7 @@ from .serializers import CategorySerializer, ProductSerializer
 
 
 class CategoryViewSet(RetrieveModelMixin, ListModelMixin, GenericViewSet):
+    """Набор отображений для Категорий."""
 
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
@@ -15,6 +16,7 @@ class CategoryViewSet(RetrieveModelMixin, ListModelMixin, GenericViewSet):
 
 
 class ProductViewSet(RetrieveModelMixin, ListModelMixin, GenericViewSet):
+    """Набор отображений для Продуктов."""
 
     queryset = Product.objects.all()
     serializer_class = ProductSerializer

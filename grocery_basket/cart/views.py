@@ -11,6 +11,7 @@ from .serializers import (
 
 
 class CartViewSet(ViewSet):
+    """Набор методов обработчиков для эндпоинтов Корзины."""
 
     permission_classes = (IsAuthenticated,)
 

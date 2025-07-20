@@ -8,6 +8,7 @@ from .models import Cart, CartProduct
 
 
 class CartProductSerializer(ModelSerializer):
+    """Сериализатор модели CartProduct для отображения."""
 
     product = SerializerMethodField()
     price = SerializerMethodField()
@@ -31,6 +32,7 @@ class CartProductSerializer(ModelSerializer):
 
 
 class CartResponseSerializer(ModelSerializer):
+    """Сериализатор модели Cart для отображения."""
 
     products = CartProductSerializer(many=True, read_only=True)
     total_price = SerializerMethodField()
@@ -45,6 +47,7 @@ class CartResponseSerializer(ModelSerializer):
 
 
 class CreateUpdateCartProductSerializer(ModelSerializer):
+    """Сериализатор модели CartProduct для создания и изменения."""
 
     class Meta:
         model = CartProduct

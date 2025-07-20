@@ -8,6 +8,7 @@ site.site_header = 'Администрирование'
 
 
 class BaseProductAdmin(ModelAdmin):
+    """Базовая модель администрирования."""
 
     def get_html_image(self, obj):
         """Возвращает превью изображения"""
@@ -20,6 +21,7 @@ class BaseProductAdmin(ModelAdmin):
 
 @register(Category)
 class CategoryAdmin(BaseProductAdmin):
+    """Модель администрирования категории."""
 
     fields = ('slug', 'name', 'image', 'get_html_image')
     list_display = 'id', 'name', 'slug'
@@ -30,6 +32,7 @@ class CategoryAdmin(BaseProductAdmin):
 
 @register(Subcategory)
 class SubcategoryAdmin(BaseProductAdmin):
+    """Модель администрирования подкатегории."""
 
     fields = 'slug', 'name', 'category', 'image', 'get_html_image'
     list_display = 'id', 'name', 'slug', 'category'
@@ -40,6 +43,7 @@ class SubcategoryAdmin(BaseProductAdmin):
 
 @register(Product)
 class ProductAdmin(BaseProductAdmin):
+    """Модель администрирования продуктов."""
 
     fields = (
         'slug',

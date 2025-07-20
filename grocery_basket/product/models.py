@@ -9,6 +9,7 @@ from core.mixins import DateAutoMixin
 
 
 class BaseProductBase(models.Model):
+    """Базовая модель для приложения product."""
 
     name = models.CharField(
         verbose_name='Наименование',
@@ -33,6 +34,7 @@ class BaseProductBase(models.Model):
 
 
 class Category(BaseProductBase, DateAutoMixin):
+    """Модель категорий."""
 
     image = models.ImageField(
         verbose_name='Наименование',
@@ -48,6 +50,7 @@ class Category(BaseProductBase, DateAutoMixin):
 
 
 class Subcategory(BaseProductBase, DateAutoMixin):
+    """Модель подкатегорий."""
 
     image = models.ImageField(
         verbose_name='Изображение',
@@ -72,6 +75,7 @@ class Subcategory(BaseProductBase, DateAutoMixin):
 
 
 class Product(BaseProductBase, DateAutoMixin):
+    """Модель продуктов."""
 
     image = models.ImageField(
         verbose_name='Изображение',

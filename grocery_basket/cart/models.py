@@ -11,7 +11,7 @@ User = get_user_model()
 
 
 class Cart(DateAutoMixin):
-
+    """Модель корзины. Для каждого пользователя своя в единичном варианте."""
     user = models.OneToOneField(
         User,
         on_delete=models.CASCADE,
@@ -29,6 +29,7 @@ class Cart(DateAutoMixin):
 
 
 class CartProduct(DateAutoMixin):
+    """Связная модель корзины-продуктов."""
 
     product = models.ForeignKey(
         Product,

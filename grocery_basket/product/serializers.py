@@ -4,6 +4,7 @@ from .models import Category, Product, Subcategory
 
 
 class SubcategorySerializer(ModelSerializer):
+    """Сериализатор модели Subcategory для отображения."""
 
     class Meta:
         model = Subcategory
@@ -11,6 +12,7 @@ class SubcategorySerializer(ModelSerializer):
 
 
 class CategorySerializer(ModelSerializer):
+    """Сериализатор модели Category для отображения."""
 
     subcategory = SubcategorySerializer(many=True, read_only=True)
 
@@ -20,6 +22,7 @@ class CategorySerializer(ModelSerializer):
 
 
 class ProductSerializer(ModelSerializer):
+    """Сериализатор модели Product для отображения."""
 
     image_thumbnail = SerializerMethodField()
     image_medium = SerializerMethodField()
