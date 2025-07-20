@@ -42,6 +42,7 @@ class Category(BaseProductBase, DateAutoMixin):
     )
 
     class Meta:
+        ordering = ['name']
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
 
@@ -62,6 +63,7 @@ class Subcategory(BaseProductBase, DateAutoMixin):
     )
 
     class Meta:
+        ordering = ['name']
         verbose_name = 'Подкатегория'
         verbose_name_plural = 'Подкатегории'
 
@@ -112,6 +114,7 @@ class Product(BaseProductBase, DateAutoMixin):
     )
 
     class Meta:
+        ordering = ['name']
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
 

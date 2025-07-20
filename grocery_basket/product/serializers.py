@@ -30,6 +30,7 @@ class ProductSerializer(ModelSerializer):
             'id',
             'name',
             'slug',
+            'price',
             'category',
             'subcategory',
             'image',

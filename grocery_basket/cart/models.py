@@ -28,7 +28,7 @@ class Cart(DateAutoMixin):
         return sum(product.total_price for product in self.products.all())
 
 
-class CartProduct(models.Model):
+class CartProduct(DateAutoMixin):
 
     product = models.ForeignKey(
         Product,

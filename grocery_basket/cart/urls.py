@@ -11,6 +11,7 @@ urlpatterns = [
             'put': 'update',
             'patch': 'partial_update',
             'delete': 'destroy'
-        })
+        }),
+        name='cart-actions',
     )
 ]
