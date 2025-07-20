@@ -1,0 +1,8 @@
+[tool.isort]
+default_section = "THIRDPARTY"
+known_this_project = ["grocery_basket", "users", "config", "core", "cart", "product"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "THIS_PROJECT", "LOCALFOLDER"]
+profile = "black"
+line_length = 79
+multi_line_output = 3
+include_trailing_comma = true

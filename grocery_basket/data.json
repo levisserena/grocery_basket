@@ -1,0 +1,192 @@
+[
+{
+  "model": "product.category",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-07-20T06:56:02.544Z",
+    "updated_at": "2025-07-20T06:57:20.960Z",
+    "name": "Камень",
+    "slug": "stone",
+    "image": "category/1_z1gilba.jpg"
+  }
+},
+{
+  "model": "product.category",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-07-20T06:57:15.085Z",
+    "updated_at": "2025-07-20T06:57:15.085Z",
+    "name": "Металл",
+    "slug": "Metal",
+    "image": "category/1_6CFHeTh.jpg"
+  }
+},
+{
+  "model": "product.subcategory",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-07-20T06:57:52.467Z",
+    "updated_at": "2025-07-20T06:57:52.467Z",
+    "name": "Обсидиан",
+    "slug": "obsidian",
+    "image": "subcategory/1_5Mka86a.jpg",
+    "category": 1
+  }
+},
+{
+  "model": "product.subcategory",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-07-20T06:58:28.967Z",
+    "updated_at": "2025-07-20T06:58:28.967Z",
+    "name": "Гранит",
+    "slug": "granite",
+    "image": "subcategory/1_lLj8oBH.jpg",
+    "category": 1
+  }
+},
+{
+  "model": "product.subcategory",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-07-20T06:59:25.822Z",
+    "updated_at": "2025-07-20T06:59:25.822Z",
+    "name": "Железо",
+    "slug": "iron",
+    "image": "subcategory/1_7Xgebqe.jpg",
+    "category": 2
+  }
+},
+{
+  "model": "product.subcategory",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-07-20T07:00:03.698Z",
+    "updated_at": "2025-07-20T07:00:03.698Z",
+    "name": "Медь",
+    "slug": "copper",
+    "image": "subcategory/1_gBCckVi.jpg",
+    "category": 2
+  }
+},
+{
+  "model": "product.subcategory",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-07-20T07:00:25.225Z",
+    "updated_at": "2025-07-20T07:00:25.225Z",
+    "name": "Кремний",
+    "slug": "silicon",
+    "image": "subcategory/1_Ev47Ax3.jpg",
+    "category": 1
+  }
+},
+{
+  "model": "product.subcategory",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-07-20T07:00:56.510Z",
+    "updated_at": "2025-07-20T07:00:56.511Z",
+    "name": "Серебро",
+    "slug": "silver",
+    "image": "subcategory/1_UT4Jlwb.jpg",
+    "category": 2
+  }
+},
+{
+  "model": "product.subcategory",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-07-20T07:01:16.844Z",
+    "updated_at": "2025-07-20T07:01:16.844Z",
+    "name": "Золото",
+    "slug": "gold",
+    "image": "subcategory/1_SJMvEJD.jpg",
+    "category": 2
+  }
+},
+{
+  "model": "product.product",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-07-20T07:08:15.426Z",
+    "updated_at": "2025-07-20T07:08:15.426Z",
+    "name": "Кремниевый топор",
+    "slug": "axe_silicon",
+    "image": "product/1.jpg",
+    "category": 1,
+    "subcategory": 5,
+    "price": "599.99"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-07-20T07:11:45.885Z",
+    "updated_at": "2025-07-20T07:11:45.885Z",
+    "name": "Обсидиановый нож",
+    "slug": "knife_obsidian",
+    "image": "product/1_myWyOG2.jpg",
+    "category": 1,
+    "subcategory": 1,
+    "price": "1200.00"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-07-20T07:12:42.877Z",
+    "updated_at": "2025-07-20T07:12:42.877Z",
+    "name": "Коса железная",
+    "slug": "scythe_Iron",
+    "image": "product/1_V0eiYFt.jpg",
+    "category": 2,
+    "subcategory": 3,
+    "price": "650.00"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-07-20T07:13:33.389Z",
+    "updated_at": "2025-07-20T07:13:33.389Z",
+    "name": "Золотой  кулон",
+    "slug": "pendant_gold",
+    "image": "product/1_RCGAxrA.jpg",
+    "category": 2,
+    "subcategory": 7,
+    "price": "8000.00"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-07-20T07:14:50.551Z",
+    "updated_at": "2025-07-20T07:14:50.551Z",
+    "name": "Корона Виля",
+    "slug": "crown_vil",
+    "image": "product/1_kfvubXH.jpg",
+    "category": 2,
+    "subcategory": 7,
+    "price": "11999.90"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-07-20T07:16:31.964Z",
+    "updated_at": "2025-07-20T07:16:31.964Z",
+    "name": "Кабель 2.5 квадрата, защещенный, бухта 100 м",
+    "slug": "cable_2_5_100",
+    "image": "product/1_xLzuL0t.jpg",
+    "category": 2,
+    "subcategory": 4,
+    "price": "2252.74"
+  }
+}
+]

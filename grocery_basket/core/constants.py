@@ -1,0 +1,2 @@
+LENGTH_TEXT_LONG: int = 255
+LENGTH_SLUG: int = 40
